@@ -3,6 +3,9 @@ MAINTAINER Martin Liška
 
 WORKDIR /abuild
 
+RUN ld --version
+RUN which ld
+
 RUN wget --no-check-certificate https://github.com/marxin/gcc/archive/docker.zip
 RUN unzip docker.zip
 
