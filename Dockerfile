@@ -6,7 +6,7 @@ WORKDIR /abuild
 RUN ld --version
 RUN which ld
 
-RUN wget --no-check-certificate https://github.com/marxin/gcc/archive/docker.zip?v=1
+RUN wget --no-check-certificate https://github.com/marxin/gcc/archive/docker.zip?v=1 -O docker.zip
 RUN unzip docker.zip
 
 WORKDIR /abuild/gcc-docker
